@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Brandon Grotesque', sans-serif;
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -21,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background-color: #111;
+    background-color: #001f3d;  /* Navy Blue */
     color: white;
     padding: 2rem 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -96,6 +96,7 @@ header nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
+/* Form Styling */
 form input,
 form textarea {
     width: 100%;
@@ -107,7 +108,7 @@ form textarea {
 }
 
 form button {
-    background-color: #00bcd4;
+    background-color: #001f3d;  /* Navy Blue */
     color: white;
     padding: 15px;
     border: none;
@@ -118,12 +119,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #008c96;
+    background-color: #00bcd4;  /* Light Blue */
 }
 
 /* Footer */
 footer {
-    background-color: #111;
+    background-color: #001f3d;  /* Navy Blue */
     color: white;
     text-align: center;
     padding: 1.5rem;
