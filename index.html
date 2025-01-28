@@ -6,18 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ali Khaksar | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="top-section">
         <div class="container">
-            <h1 class="name">Ali Khaksar</h1>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/alikhaksar1994/" target="_blank" class="linkedin-icon">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Linkedin-Logo.png" alt="LinkedIn">
-                </a>
-                <a href="resume.pdf" download class="resume-link">Resume (PDF)</a>
+            <div class="header-top">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/alikhaksar1994/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <a href="resume.pdf" download class="resume-link">Resume</a>
             </div>
+            <h1 class="name">Ali Khaksar</h1>
             <nav>
                 <ul>
                     <li><a href="#about" class="smooth-scroll">About</a></li>
@@ -40,16 +46,28 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300" alt="Project 1">
+                    </div>
                     <h3 class="project-title">Project 1</h3>
                     <p>A brief description of what the project is about. Be concise and focus on the most important details.</p>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
                 </div>
                 <div class="project">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300" alt="Project 2">
+                    </div>
                     <h3 class="project-title">Project 2</h3>
                     <p>Description of another project that showcases your skills. Use visuals if possible (you can add images later).</p>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
                 </div>
                 <div class="project">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300" alt="Project 3">
+                    </div>
                     <h3 class="project-title">Project 3</h3>
                     <p>Summarize another significant project here. Make it relevant and easy to understand for potential clients or employers.</p>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
                 </div>
             </div>
         </div>
@@ -58,7 +76,7 @@
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-            <form action="mailto:ali_khaksar@outlook.com" method="get">
+            <form id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>

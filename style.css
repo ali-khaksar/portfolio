@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Merriweather', serif;  /* Professional font */
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -21,7 +21,7 @@ body {
 
 /* Top Sections (Header and About) */
 .top-section {
-    background-color: #f0f0f0;  /* Light grey background */
+    background-color: #f0f0f0;
 }
 
 /* Header */
@@ -32,38 +32,40 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header .name {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Roboto', sans-serif;  /* Secondary font for headings */
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-header .icons {
-    margin-top: 1rem;
+.header-top .icons {
+    display: flex;
+    gap: 1rem;
 }
 
-header .icons a {
+.header-top .social-icon {
     color: #333;
-    margin: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-header .icons a:hover {
+.header-top .social-icon:hover {
     color: #00bcd4;
 }
 
-header .resume-link {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    display: inline-block;
+.header-top .resume-link {
+    font-size: 1rem;
     color: #333;
     text-decoration: none;
+    margin-left: 1rem;
 }
 
-header .linkedin-icon img {
-    height: 1.2rem;  /* LinkedIn icon height matches text */
-    width: auto;
+header .name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 header nav ul {
@@ -98,7 +100,7 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
     font-weight: 600;
     text-align: center;
-    font-family: 'Roboto', sans-serif;  /* Secondary font for headings */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Faded Background Sections */
@@ -134,10 +136,31 @@ header nav ul li a:hover {
     transform: translateY(-10px);
 }
 
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 .project-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    font-family: 'Roboto', sans-serif;  /* Secondary font for headings */
+    font-family: 'Roboto', sans-serif;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #001f3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: #00bcd4;
 }
 
 /* Contact Form */
