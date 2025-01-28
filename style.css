@@ -53,6 +53,12 @@ header nav ul li a:hover {
     color: #00bcd4;
 }
 
+/* LinkedIn Icon */
+.linkedin-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
 /* Section */
 .section {
     padding: 5rem 0;
@@ -96,19 +102,34 @@ header nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-/* Form Styling */
+/* Resume Section */
+#resume {
+    text-align: center;
+}
+
+#resume a {
+    color: #001f3d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#resume a:hover {
+    color: #00bcd4;
+}
+
+/* Contact Form */
 form input,
 form textarea {
-    width: 100%;
+    width: 45%;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px 5%;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1rem;
 }
 
 form button {
-    background-color: #001f3d;  /* Navy Blue */
+    background-color: #001f3d;
     color: white;
     padding: 15px;
     border: none;
@@ -119,12 +140,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #00bcd4;  /* Light Blue */
+    background-color: #00bcd4;
 }
 
 /* Footer */
 footer {
-    background-color: #001f3d;  /* Navy Blue */
+    background-color: #001f3d;
     color: white;
     text-align: center;
     padding: 1.5rem;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Portfolio</title>
+    <title>Ali Khaksar | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Brandon+Grotesque:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,9 +14,11 @@
             <h1 class="name">Ali Khaksar</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="smooth-scroll">About</a></li>
+                    <li><a href="#projects" class="smooth-scroll">Projects</a></li>
+                    <li><a href="#resume" class="smooth-scroll">Resume</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/alikhaksar1994/" target="_blank"><i class="linkedin-icon"></i> LinkedIn</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,28 +36,35 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project">
-                    <h3 class="project-title">Data Cleaning</h3>
+                    <h3 class="project-title">Project 1</h3>
                     <p>A brief description of what the project is about. Be concise and focus on the most important details.</p>
                 </div>
                 <div class="project">
-                    <h3 class="project-title">Dashboard</h3>
+                    <h3 class="project-title">Project 2</h3>
                     <p>Description of another project that showcases your skills. Use visuals if possible (you can add images later).</p>
                 </div>
                 <div class="project">
-                    <h3 class="project-title">Fun Projects</h3>
+                    <h3 class="project-title">Project 3</h3>
                     <p>Summarize another significant project here. Make it relevant and easy to understand for potential clients or employers.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <p>Download my <a href="resume.pdf" target="_blank">Resume (PDF)</a></p>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form action="mailto:ali_khaksar@outlook.com" method="get">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -63,7 +72,7 @@
 
     <footer>
         <div class="container">
-            <p>©2025 Ali Khaksar</p>
+            <p>© 2025 Ali Khaksar</p>
         </div>
     </footer>
 
