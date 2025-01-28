@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Source Sans Pro', sans-serif;  /* LinkedIn font */
+    font-family: 'Merriweather', serif;  /* Professional font */
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -19,10 +19,14 @@ body {
     margin: 0 auto;
 }
 
+/* Top Sections (Header and About) */
+.top-section {
+    background-color: #f0f0f0;  /* Light grey background */
+}
+
 /* Header */
 header {
-    background-color: #001f3d;  /* Navy Blue */
-    color: white;
+    color: #333;
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -31,6 +35,7 @@ header {
 header .name {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;  /* Secondary font for headings */
 }
 
 header .icons {
@@ -38,7 +43,7 @@ header .icons {
 }
 
 header .icons a {
-    color: white;
+    color: #333;
     margin: 0 1rem;
     font-size: 1.5rem;
     text-decoration: none;
@@ -52,8 +57,13 @@ header .resume-link {
     font-size: 1.2rem;
     margin-top: 1rem;
     display: inline-block;
-    color: white;
+    color: #333;
     text-decoration: none;
+}
+
+header .linkedin-icon img {
+    height: 1.2rem;  /* LinkedIn icon height matches text */
+    width: auto;
 }
 
 header nav ul {
@@ -68,7 +78,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
@@ -88,6 +98,7 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
     font-weight: 600;
     text-align: center;
+    font-family: 'Roboto', sans-serif;  /* Secondary font for headings */
 }
 
 /* Faded Background Sections */
@@ -126,14 +137,21 @@ header nav ul li a:hover {
 .project-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;  /* Secondary font for headings */
 }
 
 /* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 form input,
 form textarea {
-    width: 45%;
-    padding: 15px;
-    margin: 10px 5%;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1rem;
@@ -142,10 +160,10 @@ form textarea {
 form button {
     background-color: #001f3d;
     color: white;
-    padding: 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
