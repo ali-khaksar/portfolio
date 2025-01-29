@@ -2,7 +2,7 @@
 window.addEventListener('load', function () {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Smooth scrolling
+        behavior: 'smooth' 
     });
 });
 
@@ -20,17 +20,17 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
                 block: 'start'
             });
         } else {
-            window.location.href = this.getAttribute('href');  // Open external page if section doesn't exist
+            window.location.href = this.getAttribute('href');
         }
     });
 });
 
 // Scroll to top when clicking on "Ali Khaksar"
 document.getElementById('header-name').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default behavior (if any)
+    e.preventDefault(); 
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Smooth scroll to the top
+        behavior: 'smooth'
     });
 });
 
@@ -44,7 +44,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         object[key] = value;
     });
 
-    fetch('https://formspree.io/f/your-form-id', {  // Replace with your Formspree endpoint
+    fetch('https://formspree.io/f/your-form-id', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

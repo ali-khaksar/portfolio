@@ -15,7 +15,7 @@ body {
 
 /* Top Banner */
 .top-banner {
-    height: 50px;
+    height: 60px;
     background: #001f3d;
     width: 100%;
     position: fixed;
@@ -30,13 +30,17 @@ body {
 
 .header-name {
     color: white;
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 2.1rem;
+    font-weight: 600;
     font-stretch: expanded;
     font-family: 'Roboto', sans-serif;
     margin-right: auto;
     padding-left: 0%;
-    cursor: default; 
+    cursor: pointer; 
+}
+
+.header-name:hover {
+    color: #00bcd4; /* Change text color on hover */
 }
 
 .header-icons {
@@ -86,7 +90,7 @@ header {
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 50px; /* Add margin to account for fixed banner */
+    margin-top: 60px; /* Add margin to account for fixed banner */
 }
 
 .header-top {
@@ -98,7 +102,7 @@ header {
 
 .name-animation {
     font-family: 'Source Code Pro', monospace;
-    font-size: 2rem; /* Increased from 1.5rem */
+    font-size: 2rem; 
     color: #333;
 }
 
@@ -109,7 +113,7 @@ header {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.15em;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 1s steps(11, end), blink-caret 1.2s step-end infinite;
 }
 
 @keyframes typing {
@@ -246,9 +250,27 @@ form {
     text-align: center;
 }
 
+.form-row {
+    display: flex;
+    gap: 1rem; /* Space between Name and Email fields */
+    margin-bottom: 1rem; /* Space between the row and the Message field */
+}
+
+.form-group {
+    flex: 1; /* Make both fields flexible */
+}
+
+.name-group {
+    flex: 0.3; /* Name takes 30% of the row */
+}
+
+.email-group {
+    flex: 0.7; /* Email takes 70% of the row */
+}
+
 form label {
     display: block;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Merriweather', serif; /* Change font to Merriweather */
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     text-align: left;
@@ -263,6 +285,10 @@ form textarea {
     border: 1px solid #ddd;
     font-size: 1rem;
     font-family: 'Source Code Pro', monospace;
+}
+
+form textarea {
+    height: 150px; /* Adjust height for the message box */
 }
 
 form button {
@@ -287,7 +313,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     font-size: 1rem;
 }
 
@@ -298,6 +324,6 @@ footer .location {
 }
 
 footer .location {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+    margin-top: 0rem;
+    font-size: 0.8rem;
 }
