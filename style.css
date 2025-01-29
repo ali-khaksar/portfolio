@@ -15,8 +15,58 @@ body {
 
 /* Top Banner */
 .top-banner {
-    height: 10px;
+    height: 50px;
     background: #001f3d;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.header-name {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-stretch: expanded;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    padding-left: 0%;
+    cursor: default; 
+}
+
+.header-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-icons .social-icon,
+.header-icons .resume-link {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-icons .social-icon:hover {
+    color: #00bcd4;
+}
+
+.header-icons .resume-link {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header-icons .resume-link i {
+    font-size: 1rem;
 }
 
 /* Container */
@@ -36,21 +86,20 @@ header {
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Add margin to account for fixed banner */
 }
 
 .header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    flex-wrap: wrap; /* Added */
 }
 
 .name-animation {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased from 1.5rem */
     color: #333;
-    text-align: center; /* Added */
 }
 
 .typing {
@@ -73,40 +122,8 @@ header {
     50% { border-color: #333 }
 }
 
-.header-top .icons {
-    display: flex;
-    gap: 1rem;
-    order: 1; /* Added */
-}
-
-.header-top .social-icon {
-    color: #333;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.header-top .social-icon:hover {
-    color: #00bcd4;
-}
-
-.header-top .resume-link {
-    font-size: 1rem;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: 'Source Code Pro', monospace;
-    order: 2; /* Added */
-}
-
-.header-top .resume-link i {
-    font-size: 1rem;
-}
-
 header .title {
-    font-size: 1.2rem; /* Adjusted */
+    font-size: 1rem;
     color: #555;
     font-family: 'Source Code Pro', monospace;
     margin-bottom: 1rem;
@@ -127,4 +144,160 @@ header nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0
+    transition: color 0.3s ease;
+    font-family: 'Source Code Pro', monospace;
+    padding: 5px 10px; /* Add padding */
+    border: 2px solid #333; /* Add border */
+    border-radius: 20px; /* Add rounded corners */
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+    border-color: #00bcd4; /* Change border color on hover */
+}
+
+/* Section */
+.section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Faded Background Sections */
+.faded-background {
+    background-color: #f4f4f4;
+}
+
+/* About Section */
+.bio {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #001f3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: #00bcd4;
+}
+
+/* Get in Touch Section */
+.contact-subtitle {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+form button {
+    background-color: #001f3d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Merriweather', serif;
+}
+
+form button:hover {
+    background-color: #00bcd4;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+footer .license,
+footer .location {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+}
+
+footer .location {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}

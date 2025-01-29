@@ -1,4 +1,12 @@
-// Smooth scrolling
+// Scroll to top on page load
+window.addEventListener('load', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+});
+
+// Smooth scrolling for anchor links
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -14,6 +22,15 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
         } else {
             window.location.href = this.getAttribute('href');  // Open external page if section doesn't exist
         }
+    });
+});
+
+// Scroll to top when clicking on "Ali Khaksar"
+document.getElementById('header-name').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default behavior (if any)
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll to the top
     });
 });
 

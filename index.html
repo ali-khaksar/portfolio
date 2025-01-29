@@ -10,31 +10,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-banner"></div>
+    <div class="top-banner">
+        <div class="header-name" id="header-name">Ali Khaksar</div> 
+        <div class="header-icons">
+            <a href="https://www.linkedin.com/in/alikhaksar1994/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ali-khaksar" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="resume.pdf" download class="resume-link">
+                <i class="fas fa-download"></i> Resume
+            </a>
+        </div>
+    </div>
     <header class="top-section">
         <div class="container">
             <div class="header-top">
                 <div class="name-animation">
                     <span class="typing">Hi, I'm Ali...</span>
                 </div>
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/alikhaksar1994/" target="_blank" class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/ali-khaksar" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <a href="resume.pdf" download class="resume-link">
-                    <i class="fas fa-download"></i> Resume
-                </a>
             </div>
             <p class="title">Data Analyst | Transportation Engineer</p>
             <nav>
                 <ul>
                     <li><a href="#about" class="smooth-scroll">About</a></li>
                     <li><a href="#projects" class="smooth-scroll">Projects</a></li>
-                    <li><a href="#contact" class="smooth-scroll">Get in touch</a></li>
+                    <li><a href="#contact" class="smooth-scroll">Connect</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,7 +47,7 @@
             <h2 class="section-title">About Me</h2>
             <p class="bio">
                 Professional with a Master’s degree in Transportation Engineering and a strong foundation in data analysis and system optimization. Experienced in configuring and enhancing Advanced Traffic Management Systems (ATMS) through SQL scripting, geospatial analysis (QGIS), and process automation.
-                <br><br>
+                <br>
                 Proficient in Python, C++, Java, and R, with a passion for leveraging data-driven insights and innovative technologies to solve complex problems and drive efficiency across diverse sectors.
             </p>
         </div>
@@ -73,9 +75,33 @@
                 </div>
                 <div class="project">
                     <div class="project-image">
-                        <img src="https://raw.githubusercontent.com/ali-khaksar/portfolio/main/Images/Project%20Template.png" alt="Others">
+                        <img src="https://raw.githubusercontent.com/ali-khaksar/portfolio/main/Images/Project%20Template.png" alt="Machine Learning">
                     </div>
-                    <h3 class="project-title">Others</h3>
+                    <h3 class="project-title">Machine Learning</h3>
+                    <p>Summarize another significant project here. Make it relevant and easy to understand for potential clients or employers.</p>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/ali-khaksar/portfolio/main/Images/Project%20Template.png" alt="Data Cleaning with SQL">
+                    </div>
+                    <h3 class="project-title">Data Cleaning with SQL</h3>
+                    <p>A brief description of what the project is about. Be concise and focus on the most important details.</p>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/ali-khaksar/portfolio/main/Images/Project%20Template.png" alt="Data Visualization (ArcGIS and Tableau)">
+                    </div>
+                    <h3 class="project-title">Data Visualization (ArcGIS and Tableau)</h3>
+                    <p>Description of another project that showcases your skills. Use visuals if possible (you can add images later).</p>
+                    <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/ali-khaksar/portfolio/main/Images/Project%20Template.png" alt="Machine Learning">
+                    </div>
+                    <h3 class="project-title">Machine Learning</h3>
                     <p>Summarize another significant project here. Make it relevant and easy to understand for potential clients or employers.</p>
                     <a href="https://github.com/ali-khaksar" target="_blank" class="view-more">View More</a>
                 </div>
@@ -85,14 +111,14 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get in touch</h2>
+            <h2 class="section-title">Get In Touch!</h2>
             <p class="contact-subtitle">Do you have a project I can help you with? Let’s talk about it.</p>
             <form id="contact-form">
-                <label for="name">Your Name *</label>
+                <label for="name">Name *</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <label for="email">Your Email *</label>
+                <label for="email">Email Address *</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <label for="message">Your Message *</label>
+                <label for="message">Message *</label>
                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
@@ -105,7 +131,6 @@
             <p class="location">Toronto, Ontario, Canada</p>
         </div>
     </footer>
-    <div class="bottom-banner"></div>
 
     <script src="script.js"></script>
 </body>
