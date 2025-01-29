@@ -40,9 +40,35 @@ header {
 
 .header-top {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.name-animation {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #333;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
 }
 
 .header-top .icons {
@@ -65,7 +91,6 @@ header {
     font-size: 1rem;
     color: #333;
     text-decoration: none;
-    margin-left: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -76,16 +101,11 @@ header {
     font-size: 1rem;
 }
 
-header .name {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Roboto', sans-serif;
-}
-
 header .title {
     font-size: 1.5rem;
     color: #555;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1rem;
 }
 
 header nav ul {
@@ -104,6 +124,7 @@ header nav ul li a {
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
+    font-family: 'Source Code Pro', monospace;
 }
 
 header nav ul li a:hover {
@@ -131,7 +152,7 @@ header nav ul li a:hover {
 /* About Section */
 .bio {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -186,11 +207,26 @@ header nav ul li a:hover {
     background-color: #00bcd4;
 }
 
-/* Contact Form */
+/* Get in Touch Section */
+.contact-subtitle {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+}
+
+form label {
+    display: block;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 form input,
@@ -201,6 +237,7 @@ form textarea {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
 }
 
 form button {
@@ -209,30 +246,4 @@ form button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #00bcd4;
-}
-
-/* Footer */
-footer {
-    background-color: #001f3d;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer .location {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
+    font-size: 1rem
