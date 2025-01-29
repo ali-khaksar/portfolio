@@ -434,3 +434,61 @@ footer .location {
 #email-link:visited, #email-link:active {
     color: inherit;
 }
+
+/* Adjust the container width for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Increase the width to use more screen space */
+        padding: 0 10px; /* Add some padding to prevent content from touching the edges */
+    }
+
+    /* Adjust the navigation menu for mobile */
+    header nav ul {
+        flex-direction: column; /* Stack the menu items vertically */
+        padding: 0; /* Remove default padding */
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Adjust margin for stacked items */
+    }
+
+    header nav ul li a {
+        font-size: 1rem; /* Reduce font size for mobile */
+        padding: 5px; /* Reduce padding */
+        border-radius: 10px; /* Adjust border radius */
+    }
+
+    /* Ensure images do not exceed the viewport width */
+    .project-image img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the header name font size for smaller screens */
+    .header-name {
+        font-size: 1.5rem; /* Reduce font size for mobile */
+    }
+
+    /* Adjust the typing animation font size for smaller screens */
+    .name-animation {
+        font-size: 2rem; /* Reduce font size for mobile */
+    }
+
+    /* Adjust the project grid for smaller screens */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects in a single column */
+    }
+
+    /* Adjust the form layout for smaller screens */
+    .form-row {
+        flex-direction: column; /* Stack form fields vertically */
+    }
+
+    .form-group {
+        width: 100%; /* Make form fields full width */
+    }
+
+    .name-group, .email-group {
+        flex: 1; /* Ensure full width for name and email fields */
+    }
+}
