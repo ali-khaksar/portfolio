@@ -61,3 +61,13 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         alert('An error occurred. Please try again.');
     });
 });
+
+// Function to copy email to clipboard
+function copyEmail() {
+    const email = "ali_khaksar@outlook.com";
+    navigator.clipboard.writeText(email).then(() => {
+        alert("Email copied to clipboard!");
+    }).catch(() => {
+        alert("Failed to copy email. Please copy it manually.");
+    });
+}
