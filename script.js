@@ -1,11 +1,3 @@
-// Scroll to top on page load
-window.addEventListener('load', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' 
-    });
-});
-
 // Smooth scrolling for anchor links
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -44,7 +36,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         object[key] = value;
     });
 
-    fetch('https://formspree.io/f/your-form-id', {
+    fetch('https://formspree.io/f/manqorlo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -62,12 +54,13 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     });
 });
 
-// Function to copy email to clipboard
+
 function copyEmail() {
     const email = "ali_khaksar@outlook.com";
     navigator.clipboard.writeText(email).then(() => {
-        alert("Email copied to clipboard!");
+        alert("Copied to clipboard!");
     }).catch(() => {
-        alert("Failed to copy email. Please copy it manually.");
+        alert("Failed to copy. Please copy it manually.");
     });
+    return false;
 }
